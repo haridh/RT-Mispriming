@@ -1,7 +1,7 @@
 # RT-Mispriming
 Pipeline to remove mispriming artifacts from RNA-seq datasets.
 
-##Mispriming_finder_with_dups.py:
+## Mispriming_finder_with_dups.py:
 
 This is a script to identify sites of RT-mispriming from RNA-seq datasets. To use this script, you will need 4 files in the same folder as the python file.
 1. Alignment file (bam) generated using a global aligner like BWA.
@@ -14,7 +14,7 @@ There will be several intermediate files generated from this script. The file wi
 usage: Mispriming_finder_with_dups.py [-h] fasta dnuc genome nprot
 ```
 
-##Filter_misprimes.py:
+## Filter_misprimes.py:
 
 This script is to extract all misprimed reads from mispriming sites identified using "Mispriming_finder_with_dups.py". You will need 2 input files:
 1. Alignment (Bam) file converted to bed. This is one of the intermediate files generated from "Mispriming_finder_with_dups.py".
