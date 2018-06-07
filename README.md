@@ -13,6 +13,9 @@ There will be several intermediate files generated from this script. The file wi
 ```
 usage: Mispriming_finder_with_dups.py [-h] fasta dnuc genome nprot
 ```
+## Mispriming_finder_7mer_2mm.py:
+
+This script works exactly like the above script except that it uses a more stringent cut-off. Instead of relying on 2 nucleotides ("dnuc" parameter), this requires you to provide 7 bases and the script will look for mispriming events flanking a sequence that matches the 7 bases with 2 mismatches allowed.
 
 ## Filter_misprimes.py:
 
